@@ -1,0 +1,752 @@
+/*
+evo blue: #3388FF
+evo red: #FE0000
+icons: #343434
+
+new blue: #2980b9
+new red: #c0392b
+*/
+
+/*COLOURS*/
+
+:root {
+  --blue: #2980b9;
+  --red: #e74c3c;
+}
+
+.btn-outline-primary {
+  color: var(--blue);
+  border-color: var(--blue);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--blue);
+  border-color: var(--blue);
+}
+
+.btn-primary {
+  border-color: var(--blue);
+  background-color: var(--blue);
+}
+
+.btn-primary:hover {
+  background-color: #2095e3;
+  border-color: #2095e3;
+}
+
+.btn-primary:active {
+  background-color: var(--blue);
+  border-color: var(--blue);
+}
+
+.btn-primary:visited {
+  background-color: var(--blue);
+  border-color: var(--blue);
+}
+
+/***GENERAL***/
+@font-face {
+  font-family: "ornitons";
+  src: url(ornitons-serial-extralight/ornitons-serial-extralight-regular.ttf);
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  overflow-x: hidden;
+}
+
+.ornitons {
+  font-family: "ornitons";
+}
+
+/*DROPDOWN COLUMNS*/
+.dropdown-menu {
+  min-width: 200px;
+}
+.dropdown-menu.columns-2 {
+  min-width: 400px;
+}
+.dropdown-menu.columns-3 {
+  min-width: 600px;
+}
+.dropdown-menu li a {
+  padding: 5px 15px;
+  font-weight: 300;
+}
+.multi-column-dropdown {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.multi-column-dropdown li a {
+  display: block;
+  clear: both;
+  line-height: 1.428571429;
+  color: #333;
+  white-space: normal;
+}
+.multi-column-dropdown li a:hover {
+  text-decoration: none;
+  color: #262626;
+  background-color: #999;
+}
+
+@media (max-width: 767px) {
+  .dropdown-menu.multi-column {
+    min-width: 240px !important;
+    overflow-x: hidden;
+  }
+}
+
+/*SCROLLBAR*/
+::-webkit-scrollbar {
+  width: 1.2vw;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.404);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(163, 163, 163);
+  border-radius: 200px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(145, 144, 144);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: rgb(112, 112, 112);
+}
+
+.icon {
+  fill: purple;
+}
+
+.btn-primary {
+  /* background-color: yellow;
+  border: yellow; */
+}
+
+.jumbotron-color {
+  background-color: rgb(233, 236, 239);
+}
+
+/***NAV BAR***/
+#navbar {
+  border-bottom: 0.1px solid rgb(190, 190, 190);
+}
+
+#logo {
+  width: calc(100px + 3vw);
+  height: auto;
+}
+
+/* #mySidenav a {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 20vh;
+  left: calc(-40px - 4vw);
+  transition: 0.4s; 
+  padding: 5px;
+  text-decoration: none;
+  font-size: calc(10px + 1vw); 
+  background: #ffff;
+  color: var(--blue);
+  border-radius: 0 5px 5px 0; 
+}
+
+#mySidenav a:hover {
+  left: 0; 
+}
+
+#home {
+  width: calc(10px + 2vw);
+  height: auto;
+  margin-left: 20px;
+} */
+
+/* .nav-text {
+  font-size: calc(0.45rem + 0.6vw);
+}
+
+.nav-btn {
+  font-size: calc(0.25rem + 0.7vw);
+} */
+
+#raq-button {
+  margin-right: 1.5vw;
+}
+
+.material-icons {
+  font-size: calc(0.75rem + 0.5vw);
+}
+
+.dropdown-header-a {
+  text-decoration: none;
+  color: grey;
+  font-size: calc(1rem + 0.2vw);
+}
+
+.dropdown-header-a:hover {
+  text-decoration: none;
+  color: grey;
+  background-color: white;
+}
+
+.dropdown-logo {
+  height: auto;
+  width: calc(19px + 2%);
+  margin-left: 5%;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block; /*dropdown on hover*/
+}
+
+.dropdown-menu {
+  margin-top: 0; /*dropdown on hover*/
+}
+
+/***HERO SECTION***/
+#hero-lrg {
+  display: flex;
+}
+
+#hero-mbl {
+  display: none;
+}
+
+#hero {
+  background-image: linear-gradient(#4d4d4d00, #0274d800),
+    url("img/windows-3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffff;
+}
+
+#hero-regular {
+  background-image: linear-gradient(#4d4d4d00, #0274d800),
+    url("img/regular.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffff;
+}
+
+#hero-one-off {
+  background-image: linear-gradient(#4d4d4d00, #0274d800),
+    url("img/one-off.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffff;
+}
+
+#hero-support {
+  background-image: linear-gradient(#4d4d4d00, #0274d800),
+    url("img/support.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffff;
+}
+
+#hero-office-cleaning {
+  background-image: linear-gradient(#4d4d4d6c, #0274d800),
+    url("img/inneroffice.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffff;
+}
+
+#hero-covid-19 {
+  background-image: linear-gradient(#4d4d4dc2, #0274d800),
+    url("img/covid-19.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffff;
+}
+
+#hero-pubs-etc {
+  background-image: linear-gradient(#4d4d4d00, #0274d800),
+    url("img/restaurant.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffff;
+}
+
+#hero-retail {
+  background-image: linear-gradient(#4d4d4d56, #0274d800), url("img/store.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffff;
+}
+
+#hero-schools {
+  background-image: linear-gradient(#4d4d4d00, #0274d800), url("img/school.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffff;
+}
+
+#hero-theatre {
+  background-image: linear-gradient(#4d4d4d00, #0274d800),
+    url("img/theatre.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffff;
+}
+
+#hero-nurseries {
+  background-image: linear-gradient(#4d4d4d00, #0274d800),
+    url("img/nursery.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffff;
+}
+
+#hero-hotels {
+  background-image: linear-gradient(#4d4d4d50, #0274d800), url("img/hotel.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffff;
+}
+
+#hero-health {
+  background-image: linear-gradient(#4d4d4d5d, #0274d800), url("img/health.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffff;
+}
+
+#hero-deep-cleaning {
+  background-image: linear-gradient(#4d4d4d49, #0274d800),
+    url("img/deep-cleaning3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffff;
+}
+
+#hero-tenancy {
+  background-image: linear-gradient(#4d4d4d2c, #0274d800),
+    url("img/tenancy.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffff;
+}
+
+#hero-carpets {
+  background-image: linear-gradient(#4d4d4d33, #0274d800),
+    url("img/carpets.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffff;
+}
+
+#hero-windows {
+  background-image: linear-gradient(#4d4d4d00, #0274d800),
+    url("img/windows.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffff;
+}
+
+#hero-builders {
+  background-image: linear-gradient(#4d4d4d00, #0274d800),
+    url("img/builders-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffff;
+}
+
+#hero-gardening {
+  background-image: linear-gradient(#4d4d4d00, #0274d800),
+    url("img/gardening-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffff;
+}
+
+#hero-handyman {
+  background-image: linear-gradient(#4d4d4d44, #0274d800),
+    url("img/handyman.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffff;
+}
+
+#hero-pests {
+  background-image: linear-gradient(#4d4d4d00, #0274d800), url("img/pests.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffff;
+}
+
+#hero-supplies {
+  background-image: linear-gradient(#4d4d4d8a, #0274d800),
+    url("img/supplies.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffff;
+}
+
+#hero-waste {
+  background-image: linear-gradient(#4d4d4d00, #0274d800), url("img/waste.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffff;
+}
+
+#hero-safety {
+  background-image: linear-gradient(#4d4d4daf, #0274d800), url("img/safety.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffff;
+}
+
+#hero-wage {
+  background-image: linear-gradient(#4d4d4d4f, #0274d800), url("img/wage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffff;
+}
+
+#hero-contact-us {
+  background-image: linear-gradient(#4d4d4d8f, #0274d800),
+    url("img/contact-us.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffff;
+}
+
+#hero-container {
+  margin-top: 7vh;
+  margin-bottom: 4vh;
+}
+
+.red-quotes {
+  width: calc(35px + 2vw);
+  height: auto;
+  position: absolute;
+}
+
+#red-quotes-1 {
+  top: -25px;
+  left: -15px;
+}
+
+#red-quotes-2 {
+  bottom: -30px;
+  right: -14px;
+}
+
+#hero-text {
+  /* background-color: #3388ffd3;
+  background-color: var(--blue); */
+  backdrop-filter: blur(10px);
+  /* background-color: rgba(14, 36, 109, 0); */
+  background-color: #297fb9a3;
+  border: 3px solid rgba(255, 255, 255, 0.644);
+  border-radius: 8px;
+  position: relative;
+}
+
+.banner-text {
+  font-weight: 700;
+  font-family: "ornitons";
+  font-size: calc(1.1rem + 2.25vw);
+}
+
+#tel-no {
+  font-weight: 700;
+}
+
+.policy-link {
+  color: #ffff;
+  border: 2px solid #ffff;
+  border-radius: 15px;
+  padding: 3px 10px 3px 10px;
+}
+
+#living-wage {
+  width: calc(45px + 7vw);
+  height: auto;
+}
+
+/***PAGE SECTIONS***/
+
+.page-section-img-office {
+  background-image: url("img/office-populated-left.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-section-img-covid {
+  background-image: url("img/covid-19-office.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-section-img-hosp {
+  background-image: url("img/bar.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-section-img-retail {
+  background-image: url("img/store-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-section-img-schools {
+  background-image: url("img/school-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-section-img-theatre {
+  background-image: url("img/theatre-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-section-img-nurseries {
+  background-image: url("img/nursery-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-section-img-hotels {
+  background-image: url("img/hotel-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-section-img-health {
+  background-image: url("img/health-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-section-img-deep-cleaning {
+  background-image: url("img/deep-cleaning.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-section-img-tenancy {
+  background-image: url("img/tenancy2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-section-img-carpets {
+  background-image: url("img/carpets2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-section-img-windows {
+  background-image: url("img/windows-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-section-img-builders {
+  background-image: url("img/builders.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-section-img-gardening {
+  background-image: url("img/gardening.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-section-img-handyman {
+  background-image: url("img/handyman-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-section-img-pests {
+  background-image: url("img/pests-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-section-img-supplies {
+  background-image: url("img/supplies-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-section-img-waste {
+  background-image: url("img/waste2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/***ICON SECTIONS***/
+
+.icon {
+  width: calc(25px + 1.85vw);
+}
+
+.icon-text {
+  font-size: calc(0.55rem + 0.75vw);
+  font-weight: 400;
+  margin-top: 8%;
+}
+
+/**CARD SECTIONS**/
+.p-card {
+  font-weight: 300;
+}
+
+.img-wrapper {
+  position: relative;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.img-overlay {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.img-overlay:before {
+  content: " ";
+  display: block;
+  /* adjust 'height' to position overlay content vertically */
+  height: 50%;
+}
+
+/*HOW DO WE WORK SECTION*/
+/* .hdww-icon {
+  width: calc(25px + 20%);
+  padding-right: 5%;
+  border-right: 1px solid black;
+}
+
+.hdww-icon::after {
+} */
+
+#how-sm {
+  display: none;
+}
+
+.hdww-border {
+  border-radius: 50px;
+  padding-top: 1%;
+  background-color: rgb(245, 245, 245);
+  box-shadow: 15px 15px 10px rgb(158, 158, 158);
+}
+
+/*--FOOTER--*/
+.site-footer {
+  background-color: #5a5a5a;
+  color: #ffffff;
+}
+.site-footer hr {
+  border-top-color: #bbb;
+  opacity: 0.5;
+}
+
+.site-footer h6 {
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+
+.site-footer a {
+  color: #fff;
+  font-weight: 300;
+}
+.site-footer a:hover {
+  color: #fe0000;
+  text-decoration: none;
+  list-style: none;
+}
+
+.site-footer p {
+  color: #fff;
+  font-weight: 200;
+}
+
+.footer-links {
+  padding-left: 0;
+  list-style: none;
+}
+.footer-links li {
+  display: block;
+}
+.footer-links a {
+  color: #fff;
+}
+
+.copyright-text {
+  margin: 0;
+}

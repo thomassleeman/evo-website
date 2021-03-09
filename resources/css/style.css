@@ -14,6 +14,16 @@ new red: #c0392b
   --red: #e74c3c;
 }
 
+.lrg{
+  display: flex;
+}
+
+.mbl{
+  display: none;
+}
+
+
+
 .btn-outline-primary {
   color: var(--blue);
   border-color: var(--blue);
@@ -44,6 +54,27 @@ new red: #c0392b
   border-color: var(--blue);
 }
 
+
+.btn-pubs {
+  background-color: var(--blue);
+  color: #ffff;
+  border: 1px solid #ffff;
+}
+
+.btn-pubs:hover {
+  background-color:#ffff;
+  color: var(--blue);
+}
+
+.btn-pubs:active {
+  background-color: var(--blue);
+  border-color: #ffff;
+}
+
+.btn-pubs:visited {
+  background-color: var(--blue);
+}
+
 /***GENERAL***/
 @font-face {
   font-family: "ornitons";
@@ -54,6 +85,7 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 700;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .ornitons {
@@ -61,7 +93,7 @@ body {
 }
 
 /*DROPDOWN COLUMNS*/
-.dropdown-menu {
+/* .dropdown-menu {
   min-width: 200px;
 }
 .dropdown-menu.columns-2 {
@@ -97,11 +129,15 @@ body {
     min-width: 240px !important;
     overflow-x: hidden;
   }
-}
+} */
 
 /*SCROLLBAR*/
+
+
+
 ::-webkit-scrollbar {
-  width: 1.2vw;
+  width: 0.8vw;
+  min-width: 11px;
 }
 
 ::-webkit-scrollbar-track {
@@ -122,13 +158,9 @@ body {
 }
 
 .icon {
-  fill: purple;
+  /* fill: purple; */
 }
 
-.btn-primary {
-  /* background-color: yellow;
-  border: yellow; */
-}
 
 .jumbotron-color {
   background-color: rgb(233, 236, 239);
@@ -144,38 +176,6 @@ body {
   height: auto;
 }
 
-/* #mySidenav a {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  top: 20vh;
-  left: calc(-40px - 4vw);
-  transition: 0.4s; 
-  padding: 5px;
-  text-decoration: none;
-  font-size: calc(10px + 1vw); 
-  background: #ffff;
-  color: var(--blue);
-  border-radius: 0 5px 5px 0; 
-}
-
-#mySidenav a:hover {
-  left: 0; 
-}
-
-#home {
-  width: calc(10px + 2vw);
-  height: auto;
-  margin-left: 20px;
-} */
-
-/* .nav-text {
-  font-size: calc(0.45rem + 0.6vw);
-}
-
-.nav-btn {
-  font-size: calc(0.25rem + 0.7vw);
-} */
 
 #raq-button {
   margin-right: 1.5vw;
@@ -203,12 +203,12 @@ body {
   margin-left: 5%;
 }
 
-.dropdown:hover .dropdown-menu {
-  display: block; /*dropdown on hover*/
-}
+/* .dropdown:hover .dropdown-menu {
+  display: block; 
+} */
 
 .dropdown-menu {
-  margin-top: 0; /*dropdown on hover*/
+  margin-top: 0; 
 }
 
 /***HERO SECTION***/
@@ -222,9 +222,14 @@ body {
 
 #hero {
   background-image: linear-gradient(#4d4d4d00, #0274d800),
-    url("img/windows-3.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+    url("img/london-vista.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* height:100%;
+    width:100%;    */
+    background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   color: #ffff;
@@ -232,9 +237,14 @@ body {
 
 #hero-regular {
   background-image: linear-gradient(#4d4d4d00, #0274d800),
-    url("img/regular.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+    url("img/deep-cleaning3.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:100%;
+    width:100%;     
+    background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   color: #ffff;
@@ -243,8 +253,13 @@ body {
 #hero-one-off {
   background-image: linear-gradient(#4d4d4d00, #0274d800),
     url("img/one-off.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:100%;
+    width:100%;     
+    background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   color: #ffff;
@@ -253,8 +268,13 @@ body {
 #hero-support {
   background-image: linear-gradient(#4d4d4d00, #0274d800),
     url("img/support.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:100%;
+    width:100%;     
+    background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   color: #ffff;
@@ -263,8 +283,13 @@ body {
 #hero-office-cleaning {
   background-image: linear-gradient(#4d4d4d6c, #0274d800),
     url("img/inneroffice.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:100%;
+    width:100%;     
+    background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   color: #ffff;
@@ -273,8 +298,13 @@ body {
 #hero-covid-19 {
   background-image: linear-gradient(#4d4d4dc2, #0274d800),
     url("img/covid-19.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:100%;
+    width:100%;     
+    background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   color: #ffff;
@@ -283,8 +313,13 @@ body {
 #hero-pubs-etc {
   background-image: linear-gradient(#4d4d4d00, #0274d800),
     url("img/restaurant.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:100%;
+    width:100%;     
+    background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   color: #ffff;
@@ -292,7 +327,12 @@ body {
 
 #hero-retail {
   background-image: linear-gradient(#4d4d4d56, #0274d800), url("img/store.jpg");
-  background-size: cover;
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:100%;
+    width:100%;   
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -301,7 +341,12 @@ body {
 
 #hero-schools {
   background-image: linear-gradient(#4d4d4d00, #0274d800), url("img/school.jpg");
-  background-size: cover;
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:100%;
+    width:100%;   
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -311,7 +356,12 @@ body {
 #hero-theatre {
   background-image: linear-gradient(#4d4d4d00, #0274d800),
     url("img/theatre.jpg");
-  background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:100%;
+    width:100%;   
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -321,7 +371,12 @@ body {
 #hero-nurseries {
   background-image: linear-gradient(#4d4d4d00, #0274d800),
     url("img/nursery.jpg");
-  background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:100%;
+    width:100%;   
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -330,7 +385,12 @@ body {
 
 #hero-hotels {
   background-image: linear-gradient(#4d4d4d50, #0274d800), url("img/hotel.jpg");
-  background-size: cover;
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:100%;
+    width:100%;   
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -339,7 +399,12 @@ body {
 
 #hero-health {
   background-image: linear-gradient(#4d4d4d5d, #0274d800), url("img/health.jpg");
-  background-size: cover;
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:100%;
+    width:100%;   
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -349,7 +414,12 @@ body {
 #hero-deep-cleaning {
   background-image: linear-gradient(#4d4d4d49, #0274d800),
     url("img/deep-cleaning3.jpg");
-  background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:100%;
+    width:100%;   
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -359,7 +429,12 @@ body {
 #hero-tenancy {
   background-image: linear-gradient(#4d4d4d2c, #0274d800),
     url("img/tenancy.jpg");
-  background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:100%;
+    width:100%;   
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -369,7 +444,12 @@ body {
 #hero-carpets {
   background-image: linear-gradient(#4d4d4d33, #0274d800),
     url("img/carpets.jpg");
-  background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:100%;
+    width:100%;   
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -379,7 +459,12 @@ body {
 #hero-windows {
   background-image: linear-gradient(#4d4d4d00, #0274d800),
     url("img/windows.jpg");
-  background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:100%;
+    width:100%;   
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -389,7 +474,12 @@ body {
 #hero-builders {
   background-image: linear-gradient(#4d4d4d00, #0274d800),
     url("img/builders-2.jpg");
-  background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:100%;
+    width:100%;   
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -399,7 +489,12 @@ body {
 #hero-gardening {
   background-image: linear-gradient(#4d4d4d00, #0274d800),
     url("img/gardening-2.jpg");
-  background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:100%;
+    width:100%;   
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -409,7 +504,12 @@ body {
 #hero-handyman {
   background-image: linear-gradient(#4d4d4d44, #0274d800),
     url("img/handyman.jpg");
-  background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:100%;
+    width:100%;   
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -418,7 +518,12 @@ body {
 
 #hero-pests {
   background-image: linear-gradient(#4d4d4d00, #0274d800), url("img/pests.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
+  height:100%;
+  width:100%;   
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -428,7 +533,12 @@ body {
 #hero-supplies {
   background-image: linear-gradient(#4d4d4d8a, #0274d800),
     url("img/supplies.jpg");
-  background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:100%;
+    width:100%;   
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -437,7 +547,12 @@ body {
 
 #hero-waste {
   background-image: linear-gradient(#4d4d4d00, #0274d800), url("img/waste.jpg");
-  background-size: cover;
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:100%;
+    width:100%;   
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -446,7 +561,12 @@ body {
 
 #hero-safety {
   background-image: linear-gradient(#4d4d4daf, #0274d800), url("img/safety.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
+  height:100%;
+  width:100%;   
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -455,7 +575,12 @@ body {
 
 #hero-wage {
   background-image: linear-gradient(#4d4d4d4f, #0274d800), url("img/wage.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
+  height:100%;
+  width:100%;   
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -465,7 +590,12 @@ body {
 #hero-contact-us {
   background-image: linear-gradient(#4d4d4d8f, #0274d800),
     url("img/contact-us.jpg");
-  background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:100%;
+    width:100%;   
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -512,6 +642,10 @@ body {
 
 #tel-no {
   font-weight: 700;
+}
+
+.hero-form-lrg{
+  max-height: 440px;
 }
 
 .policy-link {
@@ -749,4 +883,10 @@ body {
 
 .copyright-text {
   margin: 0;
+}
+
+/*--CONTACT US PAGE--*/
+.contact-us-link{
+  text-decoration: none;
+  color: #212529;
 }
